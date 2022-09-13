@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: logistics-config-client
+  cloud:
+    config:
+      uri: http://localhost:8888
+---
+spring:
+  application:
+    name: logistics-config-client
+  profiles: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+---
+spring:
+  application:
+    name: logistics-config-client
+  profiles: qa
+  cloud:
+    config:
+      uri: http://localhost:8888
+---
+spring:
+  application:
+    name: logistics-config-client
+  profiles: prod
+  cloud:
+    config:
+      uri: http://localhost:8888
+
